@@ -1,0 +1,50 @@
+@media (width >= 1920px) and (height >= 900px) {
+  body {
+    background-color: rgb(0, 0, 92);
+  }
+
+  main {
+    height: 900px;
+    width: 900px;
+    margin: 2vh auto;
+    align-self: center;
+    vertical-align: middle;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  div {
+    border: solid 2px #191970;
+    background-color: #0818a8;
+    border-radius: 10%;
+    height: 175px;
+    width: 175px;
+    margin: auto;
+
+    box-shadow: 6px 4px 14px black;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1920px) and (min-height: 800px) and (max-height: 1080px){
+  /* Your styles here */
+}
+
+
+div::after {
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  border-radius: 10%;
+}
+
+div:hover {
+  transform: scale(1.2, 1.2);
+}
+
+div:hover::after {
+  opacity: 1;
+}
