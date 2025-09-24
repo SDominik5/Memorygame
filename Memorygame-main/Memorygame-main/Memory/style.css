@@ -1,11 +1,10 @@
-@media (width >= 1920px) and (height >= 900px) {
-  body {
-    background-color: rgb(0, 0, 92);
-  }
+*{
+  box-sizing: border-box;
+}
 
-  main {
-    height: 900px;
-    width: 900px;
+main {
+    height: fit-content;
+    width: fit-content;
     margin: 2vh auto;
     align-self: center;
     vertical-align: middle;
@@ -19,20 +18,45 @@
     border: solid 2px #191970;
     background-color: #0818a8;
     border-radius: 10%;
-    height: 175px;
-    width: 175px;
-    margin: auto;
+    height: 10em;
+    width: 10em;
+    margin: 1em;
+
+    box-shadow: 6px 4px 14px black;
+    transition: all 0.4s ease-in-out;
+  }
+
+body {
+  background-color: rgb(0, 0, 92);
+}
+
+@media screen and (width <= 45rem) {
+    div {
+    border: solid 2px #191970;
+    background-color: #0818a8;
+    border-radius: 10%;
+    height: 5em;
+    width: 5em;
+    margin: 0.5em;
 
     box-shadow: 6px 4px 14px black;
     transition: all 0.4s ease-in-out;
   }
 }
 
+@media  screen and (height <= 50rem) {
+      div {
+    border: solid 2px #191970;
+    background-color: #0818a8;
+    border-radius: 10%;
+    height: 5em;
+    width: 5em;
+    margin: 0.5em;
 
-@media (min-width: 768px) and (max-width: 1920px) and (min-height: 800px) and (max-height: 1080px){
-  /* Your styles here */
+    box-shadow: 6px 4px 14px black;
+    transition: all 0.4s ease-in-out;
+  }
 }
-
 
 div::after {
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.6);
