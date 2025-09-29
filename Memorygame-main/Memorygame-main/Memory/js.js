@@ -113,7 +113,7 @@ function checkCards(div, x) {
     } else {
       cardHandler(turnedCard[0], turnedCard[1]);
     }
-    if (x.length == 0) {
+    if (x.length == 8) {
       gameEnd();
     }
   }
@@ -153,3 +153,4 @@ function gameEnd() {
   field.appendChild(btn);
   body.appendChild(field);
 }
+
